@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>Traveling Abroad May Not Be As Out of Reach As You Think</title>
+
+        <!-- Your styles should be called here -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+    </head>
+
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+
+
+
+        <h1>Traveling Abroad May Not Be As Out of Reach As You Think</h1>
+        <h2>by Rahima Nasa, Joy Notoma, and Elizabeth Ramanand</h2>
+
+
+
+        <figure>
+            <img src="images/worldmap.gif" id="header-pic" />
+            <figcaption> Go anywhere in the world with the money you already spend in a month. <i> Graphic by Rahima Nasa </i> </figcaption>
+        </figure>
+
+    <div class="main-text">
+
+        <p> Millenials are traveling for longer periods of time on smaller budgets than previous generations. The United Nations estimates that 20% of all international tourists, or nearly 200 million travelers, are young people. Despite the growing number of young travelers, there are still millennials who believe that international travel is beyond their budget or only reserved for the wealthy.</p>
+<br>
+        <p>This calculator will show users how their monthly budget can translate into long-term travel on a shoestring budget. Some may find that their dollar goes further than they might have imagined.</p>
+<br>
+        <p>Travel blogger and photographer Dave Anderson is a long-term nomad and sticking to a budget during his travels is extremely important to him.
+           “I tend to always stay in cheaper hostels or hotels. My best tip for traveling on a budget is simply to travel to more affordable countries. I'm always recommending people to make it out to Eastern Europe, South East Asia, or Central America.
+           The USD is strong, and it will go a lot further in developing countries” says Anderson.</p>
+<br>
+          <p>Methodology:</p>
+            <br>
+          <p>These calculations are based on the average cost of living in each country, according to crowdsourced data compiled by <a href="https://www.numbeo.com/cost-of-living/">Numbeo</a>, and converted to USD. We calculated the days you
+          can spend in these countries, without airfare expense, to include three inexpensive meals per day, a one bedroom apartment outside of city center, and a monthly transit pass. Then, we divided that amount by 30 in order to find a daily cost in each destination. That's how we found how many days you would get in each country.</p>
+            </div>
+
+
+<!--calculator to find monthly expenses in the US-->
+        <div id="calculator">
+            <h3>How much do you spend on these each month? </h3> Rent: <input type="number" id="number1" />
+            <br/> Groceries/food: <input type="number" id="number2" />
+            <br/> Transportation: <input type="number" id="number3" />
+            <br/> Entertainment: <input type="number" id="number4" />
+            <br/> Misc: <input type="number" id="number5" />
+            <p> <button id="mathIt"> Calculate! </button> </p>
+        </div>
+
+        <h3>Now, find out how many days you can spend in each country below: </h3>
+
+        <div class="grid">
+
+<!--country flags with counter-->
+            <div class="square australia"> <img src="flags/australia.png" class="icon" /> <span class="count">0</span> Australia </div>
+            <div class="square brazil"> <img src="flags/brazil.png" class="icon" /> <span class="count">0</span> Brazil </div>
+            <div class="square canada"> <img src="flags/canada.png" class="icon" /> <span class="count">0</span> Canada </div>
+            <div class="square china"> <img src="flags/china.png" class="icon" /> <span class="count">0</span> China </div>
+            <div class="square croatia"> <img src="flags/croatia.png" class="icon" /> <span class="count">0</span> Croatia </div>
+            <div class="square france"> <img src="flags/france.png" class="icon" /> <span class="count">0</span> France </div>
+            <div class="square germany"> <img src="flags/germany.png" class="icon" /> <span class="count">0</span> Germany </div>
+            <div class="square india"> <img src="flags/india.png" class="icon" /> <span class="count">0</span> India </div>
+            <div class="square jamaica"> <img src="flags/jamaica.png" class="icon" /> <span class="count">0</span> Jamaica </div>
+            <div class="square japan"> <img src="flags/japan.png" class="icon" /> <span class="count">0</span> Japan </div>
+
+            <div class="square kenya"> <img src="flags/kenya.png" class="icon" /> <span class="count">0</span> Kenya </div>
+            <div class="square mexico"> <img src="flags/mexico.png" class="icon" /> <span class="count">0</span> Mexico </div>
+            <div class="square senegal"> <img src="flags/senegal.png" class="icon" /> <span class="count">0</span> Senegal </div>
+
+            <div class="square southafrica"> <img src="flags/southafrica.png" class="icon" /> <span class="count">0</span> South Africa </div>
+            <div class="square thailand"> <img src="flags/thailand.png" class="icon" /> <span class="count">0</span> Thailand </div>
+
+        </div>
+
+<!--results of daily cost calculations: 84 meals, 1 monthly transit pass, and an apt. outside of city center. Divide total by 30 for daily cost-->
+        <div class="results" id="final-results">
+            <ul>
+                <li data-perDayCost="10.50" data-country="india"> </li>
+
+                <li data-perDayCost="18.80" data-country="china"> </li>
+
+                <li data-perDayCost="19.56" data-country="mexico"> </li>
+                <li data-perDayCost="20.82" data-country="jamaica"> </li>
+                <li data-perDayCost="29.27" data-country="brazil"> </li>
+                <li data-perDayCost="62.13" data-country="canada"> </li>
+                <li data-perDayCost="74.78" data-country="australia"> </li>
+                <li data-perDayCost="7.80" data-country="kenya"> </li>
+                <li data-perDayCost="40.00" data-country="japan"> </li>
+                <li data-perDayCost="33.30" data-country="southafrica"> </li>
+                <li data-perDayCost="33.1" data-country="senegal"> </li>
+                <li data-perDayCost="49.37" data-country="germany"> </li>
+                <li data-perDayCost="56.9" data-country="france"> </li>
+                <li data-perDayCost="10.7" data-country="thailand"> </li>
+                <li data-perDayCost="27.4" data-country="croatia"> </li>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <!-- Your javascript should be called here -->
+        <script src="main.js"></script>
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
